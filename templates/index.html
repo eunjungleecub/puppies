@@ -1,0 +1,59 @@
+{% load staticfiles %}
+
+<head>
+    <html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>static gallery</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- google fonts : nanum myeongjo -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    background-color: #BEC9DB;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.container {
+    width: 70%;
+    margin: 5rem auto;
+    background-color: #ffffff;
+}
+
+.item {
+    object-fit: fill;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+#detail {
+    display: flex;
+    justify-content: center;
+}
+
+</style>
+</head>
+
+<body>
+    <!-- navbar sticky -->
+    <nav class="navbar sticky-top navbar-bg bg-dark">
+        <a class="navbar-brand" href="#">STATIC GALLERY</a>
+    </nav>
+    
+    
+{% block content %}
+{% endblock content %}
+</body>
+
+</html>

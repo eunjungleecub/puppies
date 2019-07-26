@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+<div class="container">
+<!-- display items -->
+    {% for photo in photo_items %}
+    <div class="item">
+       <a href="{% url 'detail' photo.pk %}">
+            <img src="{{ photo.photo.url }}" alt="{{ photo.title }}"/>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

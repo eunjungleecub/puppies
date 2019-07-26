@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% load staticfiles %}
+
+    <div class="container" id="detail">
+        <hr>
+            <img class="{{ photo.photo }}" alt="{{ photo.title }}"/>
+            <span>{{ photo.title }}</span>
+            <span>{{ photo.birthday }}</span>
+        <hr>
+    </div>
+
+{% block content %}
+{% endblock content %}
